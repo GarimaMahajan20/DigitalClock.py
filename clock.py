@@ -1,5 +1,4 @@
 from tkinter import *
-from tkinter.ttk import *
 from time import strftime
 r= Tk()
 r.title('Clock')
@@ -13,7 +12,7 @@ l.pack(anchor ='center')
 time()
 def exit():
     r.destroy()
-exit =Button(r,text='Exit',command = exit)
+exit =Button(r,text='Exit' ,height=5,width =9,command = exit,font=8)
 exit.pack(side=BOTTOM , anchor='e')
 
 mainloop()
